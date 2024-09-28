@@ -1,18 +1,17 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 // pages
-import Home from "./pages/Home"
-import Create from "./pages/Create"
-import Update from "./pages/Update"
-
+import Home from "./pages/Home";
+import Create from "./pages/Create";
+import Update from "./pages/Update";
 
 function App() {
   return (
     <BrowserRouter>
       <nav>
-        <h1>Supa Smoothies</h1>
+        <h1>Umay Suppabase</h1>
         <Link to="/">Home</Link>
-        <Link to="/create">Create New Smoothie</Link>
+        <Link to="/create">Create New Record</Link>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
